@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Ревин</title>
+</head>
+<body style="background-color:#d5dfeb">
+    <link href="Ekzamen1.3.html" />
+    <p><strong>Форма регистрации и входа</strong></p>
+    <ul>
+        <li style="display: inline-block; padding: 5px"><a href="Ekzamen1.1.html">Главная</a></li>
+        <li style="display: inline-block; padding: 5px"><a href="Ekzamen1.2.html">Задачи</a></li>
+        <li style="display: inline-block; padding: 5px"><a href="Ekzamen1.3.html">Форма регистрации и входа</a></li>
+        <li style="display: inline-block; padding: 5px"><a href="Ekzamen1.4.html">Форма обратной связи</a></li>
+        <li style="display: inline-block; padding: 5px"><a href="Ekzamen1.5.html">Тест</a></li>
+        <li style="display: inline-block; padding: 5px"><a href="#">Вкладка 6</a></li>
+        <li style="display: inline-block; padding: 5px"><a href="#">Вкладка 7</a></li>
+        <li style="display: inline-block; padding: 5px"><a href="Ekzamen1.8.html">Видеоуроки</a></li>
+        <li style="display: inline-block; padding: 5px"><a href="Ekzamen1.9.html">Книги</a></li>
+        <li style="display: inline-block; padding: 5px"><a href="Ekzamen1.10.html">Об авторе</a></li>
+    </ul>
+    <table>
+        <tr><td><label>Регистрация</label></td><td><label>Вход</label></td></tr>
+        <tr> <td><input type="text" id="username" placeholder="Введите имя" /></td> <td><input type="text" id="username2" placeholder="Введите имя" /></td> </tr>
+        <tr> <td><input type="text" id="password" placeholder="Введите пароль" /></td> <td><input type="text" id="password2" placeholder="Введите пароль" /></td> </tr>
+        <tr> <td><input type="button" value="Регистрация" onclick="DATA()" /></td> <td><input type="button" value="Вход" onclick="DATA2()" /></td> </tr>
+    </table>
+   
+    <script>
+        function DATA() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username == "" || null) {
+                alert("Вы не заполнили поле Имя пользователя.");
+                return false;
+            }
+            if (password == "" || null) {
+                alert("Вы не заполнили поле Пароль.");
+                return false;
+            }
+
+            localStorage.setItem("username", username);
+            localStorage.setItem("password", password);
+        }
+        function DATA2() { 
+            var username2 = document.getElementById("username2").value;
+            var password2 = document.getElementById("password2").value;
+
+            const name = localStorage.getItem('username');
+            const pass = localStorage.getItem('password');
+
+            if (username2 == "" || null) {
+                alert("Вы не заполнили поле Имя пользователя.");
+                return false;
+            }
+            if (password2 == "" || null) {
+                alert("Вы не заполнили поле Пароль.");
+                return false;
+            }
+            if (username2 == name && password2 == pass) {
+                alert("Вы успешно вошли в систему!");
+            } else { alert("Неверное имя пользователя или пароль!");}
+
+        }
+    </script>
+</body>
+</html>
+

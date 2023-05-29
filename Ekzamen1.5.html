@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Ревин</title>
+    <meta charset="utf-8">
+</head>
+<body style="background-color:#d5dfeb">
+    <p style="margin-left:650px; font-weight:bold">Тестирование</p>
+    <hr>
+    <ul>
+        <li style="display: inline-block; padding: 5px"><a href="Ekzamen1.1.html">Главная</a></li>
+        <li style="display: inline-block; padding: 5px"><a href="Ekzamen1.2.html">Задачи</a></li>
+        <li style="display: inline-block; padding: 5px"><a href="Ekzamen1.3.html">Форма регистрации и входа</a></li>
+        <li style="display: inline-block; padding: 5px"><a href="Ekzamen1.4.html">Форма обратной связи</a></li>
+        <li style="display: inline-block; padding: 5px"><a href="Ekzamen1.5.html">Тест</a></li>
+        <li style="display: inline-block; padding: 5px"><a href="#">Вкладка 6</a></li>
+        <li style="display: inline-block; padding: 5px"><a href="#">Вкладка 7</a></li>
+        <li style="display: inline-block; padding: 5px"><a href="Ekzamen1.8.html">Видеоуроки</a></li>
+        <li style="display: inline-block; padding: 5px"><a href="Ekzamen1.9.html">Книги</a></li>
+        <li style="display: inline-block; padding: 5px"><a href="Ekzamen1.10.html">Об авторе</a></li>
+    </ul>
+    <table style="position:fixed; margin-left:400px">
+        <tr><td></td><td>Первый вопрос</td></tr>
+        <tr><td><span id="q1" style="display:none;color:green">Ответ верный.</span></td> <td><input type="text" id="1" placeholder="Введите ответ" /> </td> <td><span id="e1" style="display:none; color:red">Ответ не верный.</span></td> </tr>
+
+        <tr><td></td><td>Второй вопрос</td></tr>
+        <tr><td><span id="q2" style="display:none;color:green">Ответ верный.</span></td> <td><input type="text" id="2" placeholder="Введите ответ" /> </td> <td><span id="e2" style="display:none; color:red">Ответ не верный.</span></td> </tr>
+
+        <tr><td></td><td>Третий вопрос</td></tr>
+        <tr><td><span id="q3" style="display:none;color:green">Ответ верный.</span></td> <td><input type="text" id="3" placeholder="Введите ответ" /> </td> <td><span id="e3" style="display:none; color:red">Ответ не верный.</span></td> </tr>
+
+        <tr><td></td><td>Четвертый вопрос</td></tr>
+        <tr><td><span id="q4" style="display:none;color:green">Ответ верный.</span></td> <td><input type="text" id="4" placeholder="Введите ответ" /> </td> <td><span id="e4" style="display:none; color:red">Ответ не верный.</span></td> </tr>
+
+        <tr><td></td><td>Пятый вопрос</td></tr>
+        <tr><td><span id="q5" style="display:none;color:green">Ответ верный.</span></td> <td><input type="text" id="5" placeholder="Введите ответ" /> </td> <td><span id="e5" style="display:none; color:red">Ответ не верный.</span></td> </tr>
+
+        <tr><td></td><td>Шестой вопрос</td></tr>
+        <tr><td><span id="q6" style="display:none;color:green">Ответ верный.</span></td> <td><input type="text" id="6" placeholder="Введите ответ" /> </td> <td><span id="e6" style="display:none; color:red">Ответ не верный.</span></td> </tr>
+
+        <tr><td></td><td>Седьмой вопрос</td></tr>
+        <tr><td><span id="q7" style="display:none;color:green">Ответ верный.</span></td> <td><input type="text" id="7" placeholder="Введите ответ" /> </td> <td><span id="e7" style="display:none; color:red">Ответ не верный.</span></td> </tr>
+
+        <tr><td></td><td>Восьмой вопрос</td></tr>
+        <tr><td><span id="q8" style="display:none;color:green">Ответ верный.</span></td> <td><input type="text" id="8" placeholder="Введите ответ" /> </td> <td><span id="e8" style="display:none; color:red">Ответ не верный.</span></td> </tr>
+
+        <tr><td></td><td>Девятый вопрос</td></tr>
+        <tr><td><span id="q9" style="display:none;color:green">Ответ верный.</span></td> <td><input type="text" id="9" placeholder="Введите ответ" /> </td> <td><span id="e9" style="display:none; color:red">Ответ не верный.</span></td> </tr>
+
+        <tr><td></td><td>Десятый вопрос</td></tr>
+        <tr><td><span id="q10" style="display:none;color:green">Ответ верный.</span></td> <td><input type="text" id="10" placeholder="Введите ответ" /> </td> <td><span id="e10" style="display:none; color:red">Ответ не верный.</span></td> </tr>
+
+
+        <tr><td></td><td><input type="button" value="Проверить" id="knopka" onclick="DATA()" /></td></tr>
+    </table>
+    <script>
+        var o1 = document.getElementById('1');
+        var o2 = document.getElementById('2');
+        var o3 = document.getElementById('3');
+        var o4 = document.getElementById('4');
+        var o5 = document.getElementById('5');
+        var o6 = document.getElementById('6');
+        var o7 = document.getElementById('7');
+        var o8 = document.getElementById('8');
+        var o9 = document.getElementById('9');
+        var o10 = document.getElementById('10');
+
+        var q1 = document.getElementById('q1');
+        var q2 = document.getElementById('q2');
+        var q3 = document.getElementById('q3');
+        var q4 = document.getElementById('q4');
+        var q5 = document.getElementById('q5');
+        var q6 = document.getElementById('q6');
+        var q7 = document.getElementById('q7');
+        var q8 = document.getElementById('q8');
+        var q9 = document.getElementById('q9');
+        var q10 = document.getElementById('q10');
+
+        var e1 = document.getElementById('e1');
+        var e2 = document.getElementById('e2');
+        var e3 = document.getElementById('e3');
+        var e4 = document.getElementById('e4');
+        var e5 = document.getElementById('e5');
+        var e6 = document.getElementById('e6');
+        var e7 = document.getElementById('e7');
+        var e8 = document.getElementById('e8');
+        var e9 = document.getElementById('e9');
+        var e10 = document.getElementById('e10');
+
+        function DATA() {
+            var z1 = document.getElementById('1').value;
+            var z2 = document.getElementById('2').value;
+            var z3 = document.getElementById('3').value;
+            var z4 = document.getElementById('4').value;
+            var z5 = document.getElementById('5').value;
+            var z6 = document.getElementById('6').value;
+            var z7 = document.getElementById('7').value;
+            var z8 = document.getElementById('8').value;
+            var z9 = document.getElementById('9').value;
+            var z10 = document.getElementById('10').value;
+
+            var v1 = o1.getAttribute("id");
+            var v2 = o2.getAttribute("id");
+            var v3 = o3.getAttribute("id");
+            var v4 = o4.getAttribute("id");
+            var v5 = o5.getAttribute("id");
+            var v6 = o6.getAttribute("id");
+            var v7 = o7.getAttribute("id");
+            var v8 = o8.getAttribute("id");
+            var v9 = o9.getAttribute("id");
+            var v10 = o10.getAttribute("id");
+
+
+            if (z1 == v1) {
+                q1.style.display = "block";
+                e1.style.display = "none";
+            } else {
+                q1.style.display = "none";
+                e1.style.display = "block";
+            }
+            if (z2 == v2) {
+                q2.style.display = "block";
+                e2.style.display = "none";
+            } else {
+                q2.style.display = "none";
+                e2.style.display = "block";
+            }
+            if (z3 == v3) {
+                q3.style.display = "block";
+                e3.style.display = "none";
+            } else {
+                q3.style.display = "none";
+                e3.style.display = "block";
+            }
+            if (z4 == v4) {
+                q4.style.display = "block";
+                e4.style.display = "none";
+            } else {
+                q4.style.display = "none";
+                e4.style.display = "block";
+            }
+            if (z5 == v5) {
+                q5.style.display = "block";
+                e5.style.display = "none";
+            } else {
+                q5.style.display = "none";
+                e5.style.display = "block";
+            }
+            if (z6 == v6) {
+                q6.style.display = "block";
+                e6.style.display = "none";
+            } else {
+                q6.style.display = "none";
+                e6.style.display = "block";
+            }
+            if (z7 == v7) {
+                q7.style.display = "block";
+                e7.style.display = "none";
+            } else {
+                q7.style.display = "none";
+                e7.style.display = "block";
+            }
+            if (z8 == v8) {
+                q8.style.display = "block";
+                e8.style.display = "none";
+            } else {
+                q8.style.display = "none";
+                e8.style.display = "block";
+            }
+            if (z9 == v9) {
+                q9.style.display = "block";
+                e9.style.display = "none";
+            } else {
+                q9.style.display = "none";
+                e9.style.display = "block";
+            }
+            if (z10 == v10) {
+                q10.style.display = "block";
+                e10.style.display = "none";
+            } else {
+                q10.style.display = "none";
+                e10.style.display = "block";
+            }
+        }
+    </script>
+</body> 
+</html>
